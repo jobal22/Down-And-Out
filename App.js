@@ -3,12 +3,16 @@ import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import logo from './assets/logo.png';
 import HomePage from './Components/HomePage';
+// import Carousel from './Components/Carousel';
+// import {Data} from './Components/Data';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Image source={logo} style={styles.logo}/>
       <Text style={styles.navbarText}>Down-And-Out</Text>
+      {/* <Carousel data = {Data}/> */}
       <HomePage />
       <Text style={styles.footback} />
       <View style={styles.footer}>
