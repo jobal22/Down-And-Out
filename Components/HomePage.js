@@ -50,12 +50,12 @@ export default class App extends React.Component {
           {
             title:"Confess Jesus as your Lord",
             text: "For, if you confess with your mouth that Jesus is Lord...you wil lbe saved...with the mouth one confesses and is saved. (Romans 10:9-10)",
-            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/crown.png",
+            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/crown1.png",
           },
           {
             title:"And you will be a friend, servant, and child of God.",
             text: "But to all who receive Him, who believed in His name, he gave the right to become children of God. (John 1:12)",
-            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/saved.png",
+            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/saved1.png",
           },
 
         ]
@@ -66,25 +66,27 @@ export default class App extends React.Component {
         return (
           <View style={{
               backgroundColor:'#fff',
-              borderRadius: 5,
-              height: 550,
+              borderRadius: 10,
+              height: 600,
               // padding: 50,
-              marginLeft: 15,
-              marginRight: 15, 
-              marginTop: 100,
+              // marginLeft: 15,
+              // marginRight: 15, 
+              marginTop: 75,
               }}>
+                <View style={{top: '10%',              position: 'absolute',
+}}>
             <Image style={{ width: 300, height: 300, marginLeft: 'auto', marginRight: 'auto' }} source={{uri: item.url}}/>
-            <Text style={{fontSize: 40, marginLeft: 'auto', marginRight: 'auto', marginTop: 20}}>{item.title}</Text>
-            <Text style={{fontSize: 20, marginLeft: 'auto', marginRight: 'auto', marginTop: 40, paddingLeft: 20, paddingRight: 20}}>{item.text}</Text>
-          </View>
+            <Text style={{fontSize: 35, marginLeft: 'auto', marginRight: 'auto', marginTop: 20, paddingLeft: 20, paddingRight: 20}}>{item.title}</Text>
+            <Text style={{fontSize: 15, marginLeft: 'auto', marginRight: 'auto', marginTop: 40, paddingLeft: 20, paddingRight: 20}}>{item.text}</Text>
+          </View></View>
 
         )
     }
 
     render() {
         return (
-          <SafeAreaView style={{flex: 1, backgroundColor:'#78b3d7', paddingTop: 50, }}>
-            <View style={{ flex: 1, flexDirection:'row', justifyContent: 'center', }}>
+          <SafeAreaView style={{flex: 1, backgroundColor:'#78b3d7', paddingTop: 50 }}>
+            <View style={{ flex: 1, flexDirection:'row', justifyContent: 'center', position: 'relative',}}>
                 <Carousel
                   layout={"default"}
                   ref={ref => this.carousel = ref}

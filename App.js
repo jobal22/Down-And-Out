@@ -16,7 +16,7 @@ export default function App() {
       <HomePage />
       <Text style={styles.footback} />
       <View style={styles.footer}>
-        <Text style={styles.footerText}> Share the Gospel; Reach the World</Text>
+        <Text style={styles.footerText}>Get the Gospel to Every Person</Text>
       </View>
       <StatusBar style="auto" />
     </View>
