@@ -25,37 +25,37 @@ export default class App extends React.Component {
           {
             title:"You have sinned against God",
             text: "For all have sinned and fall short of the glory of God. (Romans 3:23)",
-            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/heart.png",
+            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/face.png",
           },
           {
             title:"Jesus died on the cross for our sins",
             text: "For I delivered to you as of first importance what I also received: that Christ died for our sins in accordance with Scriptures (1 Corinthians 15:3)",
-            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/heart.png",
+            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/cross.png",
           },
           {
             title:"On the third day, Jesus rose from the grave!",
             text: "That He was buried, that He was raised on the third day in accordance with the Scriptures (1 Corinthians 13:4)",
-            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/heart.png",
+            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/tomb.png",
           },
           {
             title:"You must repent of your sins.",
             text: "From that time Jesus began to preach, saying, 'Repent, for the kingdom of heaven is at hand.' (Matthew 4:17)",
-            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/heart.png",
+            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/turn.png",
           },
           {
             title:"Believe that Jesus died on the cross and rose from the grave.",
             text: "...and believe in your heart that God raised Him from the dead, you will be saved. For with the heart one believes and is justified... (Romans 10:9-10)",
-            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/heart.png",
+            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/believe.png",
           },
           {
             title:"Confess Jesus as your Lord",
             text: "For, if you confess with your mouth that Jesus is Lord...you wil lbe saved...with the mouth one confesses and is saved. (Romans 10:9-10)",
-            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/heart.png",
+            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/crown.png",
           },
           {
             title:"And you will be a friend, servant, and child of God.",
             text: "But to all who receive Him, who believed in His name, he gave the right to become children of God. (John 1:12)",
-            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/heart.png",
+            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/saved.png",
           },
 
         ]
