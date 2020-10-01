@@ -1,18 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import logo from './assets/logo.png';
 import HomePage from './Components/HomePage';
-// import Carousel from './Components/Carousel';
-// import {Data} from './Components/Data';
-
 
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <Image source={logo} style={styles.logo}/> */}
       <Text style={styles.navbarText}>Good News Helper</Text>
-      {/* <Carousel data = {Data}/> */}
       <HomePage />
       <Text style={styles.footback} />
       <View style={styles.footer}>
@@ -28,7 +22,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    // justifyContent: 'center',
   },
   logo: {
     width: 40,

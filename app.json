@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "downAndOut",
-    "slug": "downAndOut",
+    "name": "Good News Helper",
+    "slug": "Good News Helper",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
