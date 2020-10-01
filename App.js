@@ -10,8 +10,8 @@ import HomePage from './Components/HomePage';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image source={logo} style={styles.logo}/>
-      <Text style={styles.navbarText}>Down-And-Out</Text>
+      {/* <Image source={logo} style={styles.logo}/> */}
+      <Text style={styles.navbarText}>Good News Helper</Text>
       {/* <Carousel data = {Data}/> */}
       <HomePage />
       <Text style={styles.footback} />
@@ -78,5 +78,7 @@ const styles = StyleSheet.create({
   footerText: {
     marginLeft: 'auto',
     marginRight: 'auto',
+    paddingTop: 10,
+    fontWeight: 'bold',
   }
 });

@@ -1,13 +1,6 @@
 import * as React from 'react';
-import {
-  Text, 
-  View,
-  SafeAreaView,
-  Image } from 'react-native';
-
-import Carousel from 'react-native-snap-carousel';
-import heart from './Images/heart.png';
-
+import { Text, View, SafeAreaView, Image, TouchableHighlight } from 'react-native';
+import Carousel, { Pagination } from 'react-native-snap-carousel';
 
 export default class App extends React.Component {
 
@@ -40,12 +33,12 @@ export default class App extends React.Component {
           {
             title:"You must repent of your sins.",
             text: "From that time Jesus began to preach, saying, 'Repent, for the kingdom of heaven is at hand.' (Matthew 4:17)",
-            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/turn.png",
+            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/turn1.png",
           },
           {
             title:"Believe that Jesus died on the cross and rose from the grave.",
             text: "...and believe in your heart that God raised Him from the dead, you will be saved. For with the heart one believes and is justified... (Romans 10:9-10)",
-            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/believe.png",
+            url: "https://raw.githubusercontent.com/jobal22/Down-And-Out/master/Components/Images/believe1.png",
           },
           {
             title:"Confess Jesus as your Lord",
@@ -67,35 +60,48 @@ export default class App extends React.Component {
           <View style={{
               backgroundColor:'#fff',
               borderRadius: 10,
-              height: 600,
+              height: 630,
               // padding: 50,
               // marginLeft: 15,
               // marginRight: 15, 
-              marginTop: 75,
-              }}>
-                <View style={{top: '10%',              position: 'absolute',
-}}>
-            <Image style={{ width: 300, height: 300, marginLeft: 'auto', marginRight: 'auto' }} source={{uri: item.url}}/>
-            <Text style={{fontSize: 35, marginLeft: 'auto', marginRight: 'auto', marginTop: 20, paddingLeft: 20, paddingRight: 20}}>{item.title}</Text>
-            <Text style={{fontSize: 15, marginLeft: 'auto', marginRight: 'auto', marginTop: 40, paddingLeft: 20, paddingRight: 20}}>{item.text}</Text>
-          </View></View>
-
+              // marginTop: 0,
+              }}
+          >
+            <View style={{top: '10%', position: 'absolute',}}>
+              <Image style={{ width: 300, height: 300, marginLeft: 'auto', marginRight: 'auto' }} source={{uri: item.url}}/>
+              <Text style={{fontSize: 33, marginLeft: 'auto', marginRight: 'auto', marginTop: 20, paddingLeft: 20, paddingRight: 30, textAlign: 'center'}}>{item.title}</Text>
+              <Text style={{fontSize: 15, marginLeft: 'auto', marginRight: 'auto', marginTop: 40, paddingLeft: 20, paddingRight: 40}}>{item.text}</Text>
+            </View>
+          </View>
         )
     }
 
     render() {
         return (
-          <SafeAreaView style={{flex: 1, backgroundColor:'#78b3d7', paddingTop: 50 }}>
+          <SafeAreaView style={{flex: 1, backgroundColor:'white', paddingTop: 50, flexDirection:'row', alignItems: 'center', justifyContent: 'center',}}>
+            <TouchableHighlight
+                onPress={
+                    () => { this.carousel._snapToItem(this.state.activeIndex-1)}
+                }>
+                <Image style={{marginLeft: 20}}source={require('./../assets/leftarrow.png')}/>
+            </TouchableHighlight>
             <View style={{ flex: 1, flexDirection:'row', justifyContent: 'center', position: 'relative',}}>
                 <Carousel
                   layout={"default"}
                   ref={ref => this.carousel = ref}
                   data={this.state.carouselItems}
-                  sliderWidth={420}
-                  itemWidth={400}
+                  sliderWidth={360}
+                  itemWidth={370}
                   renderItem={this._renderItem}
-                  onSnapToItem = { index => this.setState({activeIndex:index}) } />
+                  onSnapToItem = { index => this.setState({activeIndex:index}) }
+                />
             </View>
+            <TouchableHighlight            
+                onPress={
+                    () => { this.carousel._snapToItem(this.state.activeIndex+1)}
+                }>
+                <Image style={{marginRight: 20}} source={require('./../assets/rightarrow.png')}/>                
+            </TouchableHighlight>
           </SafeAreaView>
         );
     }
