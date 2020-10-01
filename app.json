@@ -21,6 +21,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "This app offers a simple visible way to share the Gospel with people of all ages.",
+    "githubUrl": "https://github.com/jobal22/Good-News-Helper"
   }
 }
